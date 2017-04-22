@@ -1,8 +1,4 @@
 import React, { Component } from 'react'
-import {
-  View,
-  Text,
-} from 'react-native'
 import { Actions, Router, Scene } from 'react-native-router-flux'
 import { Provider, connect } from 'react-redux'
 import configureStore from './store/configureStore'
@@ -28,3 +24,4 @@ export default class App extends Component {
     )
   }
 }
+

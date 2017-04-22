@@ -2,9 +2,8 @@ import Card from './Card'
 import * as actions from './actions'
 import {connect} from 'react-redux'
 import {getNav} from '../reducers'
-import {Text} from 'react-native'
 
-const mapStateToProps = (state, props)=> {
+const mapStateToProps = (state)=> {
   return {
     ...getNav(state),
   }

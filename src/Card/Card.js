@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { PropTypes }  from 'react'
 import {
   View,
   Text,
 } from 'react-native'
 
-export default (props) => {
+/* eslint-disable react/display-name */
+export default ( props: {
+  scene: PropTypes.object.isRequired,
+}) => {
   const {scene} = props
   return (
     <View style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>

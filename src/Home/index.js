@@ -3,7 +3,7 @@ import * as actions from './actions'
 import {connect} from 'react-redux'
 import {getNav, getHome} from '../reducers'
 
-const mapStateToProps = (state, props)=> {
+const mapStateToProps = (state) => {
   return {
     ...getNav(state),
     ...getHome(state),

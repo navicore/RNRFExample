@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { PropTypes }  from 'react'
 import {
   View,
   Text,
 } from 'react-native'
 
-export default (props) => {
+/* eslint-disable react/display-name */
+export default (props:{
+  count: PropTypes.number.isRequired,
+  scene: PropTypes.object.isRequired,
+  incrementCount: PropTypes.func.isRequired,
+  decrementCount: PropTypes.func.isRequired,
+  incrementCountThunk: PropTypes.func.isRequired,
+  handleCard: PropTypes.func.isRequired,
+}) => {
   const {count, scene, incrementCount, decrementCount, incrementCountThunk, handleCard} = props
   return (
     <View style={{flex:1, justifyContent: 'center', alignItems: 'center'}}>
